@@ -1,13 +1,13 @@
 body {
     font-family: 'Lobster', cursive; 
-    background-color: #fad02c; /* Bézs háttér */
+    background-color: #fad02c;
     
 }
 h1 {
     text-align: center;
     color: #333;
     font-size: 3rem;
-    font-family: 'Lobster', cursive; /* Egy díszes betűtípus */
+    font-family: 'Lobster', cursive;
     background-color: #A52A2A;
 }
 
@@ -29,10 +29,10 @@ h1 {
 }
 
 .ingredients-list li:nth-child(odd) {
-    background-color: #D2B48C; /* Világosabb barna */
+    background-color: #D2B48C; 
 }
 
 .ingredients-list li:nth-child(even) {
-    background-color: #A52A2A; /* Sötétbarna */
+    background-color: #A52A2A; 
     color: white;
 }
