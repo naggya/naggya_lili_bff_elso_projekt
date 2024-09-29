@@ -1,0 +1,117 @@
+body {
+    font-family: 'Lobster', cursive;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: black;
+}
+
+header {
+    background-color: #98fb98; /* Pale Green */
+    color: black; /* Dark Green */
+    padding: 20px 0;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo img {
+    width: 100px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: black; /* Forest Green */
+    font-weight: bold;
+}
+
+.hero {
+    background-color: #32cd32; /* Lime Green */
+    padding: 50px 20px;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(./Képernyőkép\ 2024-09-29\ 230104.png);
+}
+
+.hero h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.hero-image {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+main {
+    padding: 20px;
+}
+
+h2 {
+    color: black; /* Forest Green */
+}
+
+.ingredients-list, ol {
+    list-style-type: none;
+    padding: 0;
+}
+
+.ingredients-list li {
+    background-color: #98fb98; /* Pale Green */
+    color: black;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.ingredients-list .icon {
+    margin-right: 10px;
+}
+
+.recipe > li {
+    background-color: #98fb98; /* Pale Green */
+}
+
+ol li {
+    background-color: #90ee90; /* Light Green */
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #228b22; /* Forest Green */
+    color: black; /* Dark Green */
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+@media (min-width: 768px) {
+    .hero-image {
+        max-width: 800px;
+    }
+}
