@@ -1,0 +1,156 @@
+<!doctype HTML>	
+
+<HTML lang="hu">
+	<HEAD>
+		<META name="charset" content="UTF-8">
+		<META NAME="keywords" CONTENT="">
+		<META NAME="AUTHOR" CONTENT="Molnár Lili">
+		<META name="viewport" content="width-device-width, initial-scale=1.0">
+		<META name="description" content="">
+            <TITLE>2024/2025 1. projekt</TITLE>
+            <link rel="stylesheet" href="lilihome.css">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </HEAD>
+
+<!-----------------------------------------------------------------menu--------------------------------------------------------------->
+
+<BODY>
+  <h1>   </h1> 
+      
+  <div class="tab">				
+    <button class="tablinks" onclick="csere(event, 'home')" id="defaultOpen"><i class="fa fa-home"></i></button>
+    <button class="tablinks" onclick="csere(event, 'eloetel')">Előétel</button>
+    <button class="tablinks" onclick="csere(event, 'leves')">Leves</button>
+    <button class="tablinks" onclick="csere(event, 'foetel')">Főétel</button>
+    <button class="tablinks" onclick="csere(event, 'desszert')">Desszert</button>
+  </div>
+    
+<!---------------------------------------------------------------fooldal------------------------------------------------------------------>
+
+    <div id="home" class="tabcontent">
+        <p> Üdvözöllek a receptkönyvemben! 
+            <br>Amennyiben végeztél itt megnézheted a többiekét is!</p>
+
+        <div id="konyvek">
+            <div class="row">
+                <div class="column">
+                <a href="../nadja_receptjei/"><img src="../fooldal/nadjakonyv.png" alt="Nádja receptkönyve" style="width:100%"></a>
+                </div>
+                <div class="column">
+                <a href="../lili_receptjei/lilihome.html"><img id="lili" src="../fooldal/lilikonyv.png" alt="Lili receptkönyve" style="width:100%"></a>
+                </div>
+                <div class="column">
+                <a href="../dani_receptjei/"> <img src="../fooldal/danikonyv.png" alt="Dani receptkönyve" style="width:100%"></a>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+
+<!--------------------------------------------------------leves, husleves----------------------------------------------------------->
+
+<div id="leves" class="tabcontent">
+    <main>
+                    <img id="leves" src="2het_leves_lili/husleves.jpg" alt="húsleves">
+        <section id="receptek">
+            <h2>Húsleves hozzávalói</h2>
+            <ol id="hozzavalok">
+                <li><span class="icon">🥒</span> szoveg</li>
+                <li><span class="icon">🧄</span> szoveg</li>
+                <li><span class="icon">🧀</span> szoveg</li>
+                <li><span class="icon">🌿</span> szoveg</li>
+            </ol>
+
+            <h2>Elkészítése</h2>
+            <ol>
+                <li>szoveg</li>
+                <li>szoveg</li>
+                <li>szoveg</li>
+                <li>szoveg</li>
+                <li>szoveg</li>
+            </ol>
+
+           
+        
+        </section>
+    </main>
+  </div>
+  
+
+<!--------------------------------------------------------foetel, carbonara----------------------------------------------------------->
+
+<div id="foetel" class="tabcontent">
+    <main>
+                    <img id="carb" src="3het_foetel_lili/carb.jpg" alt="Carbonara">
+        <section id="receptek">
+            <h2>Carbonara hozzávalói</h2>
+            <ol id="hozzavalok">
+                <li><span class="icon">🥒</span> szoveg</li>
+                <li><span class="icon">🧄</span> szoveg</li>
+                <li><span class="icon">🧀</span> szoveg</li>
+                <li><span class="icon">🌿</span> szoveg</li>
+            </ol>
+
+            <h2>Elkészítése</h2>
+            <ol>
+                <li>szoveg</li>
+                <li>szoveg</li>
+                <li>szoveg</li>
+                <li>szoveg</li>
+                <li>szoveg</li>
+            </ol>
+
+            <p id="helyek">Legjobb helyek ahol carbizhatunk:</p>
+
+            <div class="gallery">
+                <a target="_blank" href="bellozzo.jpeg">
+                  <img src="3het_foetel_lili/bellozzo.jpeg" alt="Bellozzo" width="600" height="400">
+                </a>
+                <div class="desc">Bellozzo (Lehetőleg nem a westendes)</div>
+              </div>
+              
+              <div class="gallery">
+                <a target="_blank" href="vapiano.png">
+                  <img src="3het_foetel_lili/vapiano.png" alt="Vapiano" width="600" height="400">
+                </a>
+                <div class="desc">Vapiano (Lehetőleg a westendes)</div>
+              </div>
+              
+              <div class="gallery">
+                <a target="_blank" href="jamie.jpg">
+                  <img src="3het_foetel_lili/jamie.jpg" alt="Jamie Oliver's Italian Budapest" width="600" height="400">
+                </a>
+                <div class="desc">Jamie Oliver's Italian Budapest</div>
+              </div>
+              
+              <div class="gallery">
+                <a target="_blank" href="mark.JPEG">
+                  <img src="3het_foetel_lili/mark.JPEG" alt="Márkszivecske" width="600" height="400">
+                </a>
+                <div class="desc">Bárhol, ahol Márk készíti</div>
+              </div>
+        
+        </section>
+    </main>
+  </div>
+  
+<!--------------------------------------------------------------js----------------------------------------------------------->	  
+
+  <script> 
+    function csere(evt, pageName) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+      document.getElementById(pageName).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
+
+      document.getElementById("defaultOpen").click(); 
+  </script>
+  </BODY>

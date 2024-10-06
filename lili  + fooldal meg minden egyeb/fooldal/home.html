@@ -1,0 +1,64 @@
+<!doctype HTML>	
+
+<HTML lang="hu">
+	<HEAD>
+		<META name="charset" content="UTF-8">
+		<META NAME="keywords" CONTENT="">
+		<META NAME="AUTHOR" CONTENT="Molnár Lili">
+		<META name="viewport" content="width-device-width, initial-scale=1.0">
+		<META name="description" content="">
+            <TITLE>2024/2025 1. projekt</TITLE>
+            <link rel="stylesheet" href="home.css">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </HEAD>
+
+<!-----------------------------------------------------------------menu--------------------------------------------------------------->
+
+<BODY>
+  <h1>   </h1> 
+      
+  <div class="tab">				
+    <button class="tablinks" onclick="csere(event, 'home')" id="defaultOpen"><i class="fa fa-home"></i></button>
+  </div>
+    
+<!---------------------------------------------------------------fooldal------------------------------------------------------------------>
+
+    <div id="home" class="tabcontent">
+        <p> Válassz receptes könyvet!</p>
+
+    <div id="konyvek">
+        <div class="row">
+            <div class="column">
+              <img src="nadjakonyv.png" alt="Nádja receptkönyve" style="width:100%">
+            </div>
+            <div class="column">
+            <a href="../lili_receptjei/lilihome.html"><img src="lilikonyv.png" alt="Lili receptkönyve" style="width:100%"></a>
+            </div>
+            <div class="column">
+              <img src="danikonyv.png" alt="Dani receptkönyve" style="width:100%">
+            </div>
+          </div>
+      </div>
+    </div>
+
+
+<!--------------------------------------------------------------js----------------------------------------------------------->	  
+
+  <script> 
+    function csere(evt, pageName) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+      document.getElementById(pageName).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
+
+      document.getElementById("defaultOpen").click(); 
+  </script>
+  </BODY>

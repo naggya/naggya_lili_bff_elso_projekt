@@ -1,0 +1,225 @@
+body { background: rgb(255,255,255);
+    background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(233,233,233,1) 100%);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; 
+    margin-left: 2%;
+    margin-right: 2%;
+}
+  
+p{
+text-align: justify;
+font-family:'Helvetica';
+font-weight: bold;
+font-size: 40px;
+text-align: center;
+padding-top: 5%;
+}
+  
+h1{
+color: #87CEFA;
+text-align: justify;
+font-size: 30px;
+display: block;
+padding-top: 0px;
+padding-bottom: 0px;
+}
+  
+h2{
+color: #000000;
+text-align: justify;
+font-size: 20px; 
+display: block;
+padding-top: 50px;
+padding-bottom: 0px;
+padding-left: 500px;
+}
+
+   /*-------------------------------------------------------lili fooldal-----------------------------------------------------------------*/
+   #konyvek {
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 12%;
+}
+
+.column {
+    float: left;
+    width: 25%;
+    padding: 5px;
+}
+  
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+#lili {
+    opacity: 20%;
+}
+
+   /*-------------------------------------------------------leves, husleves-----------------------------------------------------------------*/
+#leves {
+    height: 537px;
+    display: block;
+    float: left;
+    padding-top: 30px;
+}
+
+.hozzavalolista, ol {
+    list-style-type: none;
+    padding: 0;
+    padding-left: 500px;
+}
+
+.hozzavalolista li {
+    background-color: rgb(135,206,250); 
+    color: black;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.hozzavalolista .icon {
+    margin-right: 10px;
+}
+
+.receptek > li {
+    background-color: rgb(135,206,250);
+}
+
+ol li {
+    background-color: rgb(135,206,250);
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+   /*-------------------------------------------------------foetel, carbonara-----------------------------------------------------------------*/
+   
+#carb {
+    height: 537px;
+    display: block;
+    float: left;
+    padding-top: 50px;
+}
+
+
+.hozzavalolista, ol {
+    list-style-type: none;
+    padding: 0;
+    padding-left: 500px;
+}
+
+.hozzavalolista li {
+    background-color: rgb(135,206,250); 
+    color: black;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.hozzavalolista .icon {
+    margin-right: 10px;
+}
+
+.receptek > li {
+    background-color: rgb(135,206,250);
+}
+
+ol li {
+    background-color: rgb(135,206,250);
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+div.gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 347px;
+}
+  
+  div.gallery:hover {
+    border: 1px solid #777;
+}
+  
+  div.gallery img {
+    width: 100%;
+    height: auto;
+}
+  
+  div.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+#helyek{
+    text-align: justify;
+    font-family:'Helvetica';
+    font-weight: bold;
+    font-size: larger;
+    text-align: center;
+    margin-top: -65px;
+    }
+
+  /*-----------------------------------------------------------js--------------------------------------------------------------------*/
+  
+  .tab {
+    overflow: hidden;
+    background-color: rgb(255, 255, 255);                       /* alap */
+    position: fixed;
+    top: 0;
+    width: 101%;                                                
+    margin-left: -2%;
+    color: white;
+    box-shadow: 2px 2px 10px #95999a;
+  }
+  
+  
+  .tab button {             /* gomb style */
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 15px 14px;
+    width: 20%;                                             
+    height: 65px;
+    font-size: 26px;
+    color: #87CEFA;
+    font-family: Helvetica;
+    font-weight: bolder;
+  }
+  
+  
+  .tab button:hover {          
+    background-color: #87CEFA;    
+    color: rgb(255, 255, 255);           
+    transition: 0.7s ease-in;               /* attunes*/
+  }
+  
+  .tab button.active {
+    background-color: #87CEFA;
+    color: white;
+  }
+  
+  .tabcontent {      
+    font-family:'Helvetica';                   /* tartalom */
+    display: none;
+    padding: 6px 12px;
+    border: none;
+    border-top: none;
+    animation: attunes 1.5s;
+  }
+  
+  @keyframes attunes {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
