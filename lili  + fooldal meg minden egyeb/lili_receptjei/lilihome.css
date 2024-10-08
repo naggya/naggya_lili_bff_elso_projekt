@@ -36,6 +36,10 @@ padding-bottom: 0px;
 padding-left: 500px;
 }
 
+h3 {
+    text-align: center;
+}
+
    /*-------------------------------------------------------lili fooldal-----------------------------------------------------------------*/
    #konyvek {
     width: 900px;
@@ -68,36 +72,16 @@ padding-left: 500px;
     padding-top: 30px;
 }
 
-.hozzavalolista, ol {
-    list-style-type: none;
-    padding: 0;
-    padding-left: 500px;
+#leveshozza {
+    padding-top: 30px;
 }
 
-.hozzavalolista li {
-    background-color: rgb(135,206,250); 
-    color: black;
-    margin: 5px 0;
-    padding: 10px;
-    border-radius: 5px;
-    display: flex;
-    align-items: center;
+#logo {
+    height: 20px;
+    display: block;
+    float: right;
 }
 
-.hozzavalolista .icon {
-    margin-right: 10px;
-}
-
-.receptek > li {
-    background-color: rgb(135,206,250);
-}
-
-ol li {
-    background-color: rgb(135,206,250);
-    margin: 5px 0;
-    padding: 10px;
-    border-radius: 5px;
-}
    /*-------------------------------------------------------foetel, carbonara-----------------------------------------------------------------*/
    
 #carb {
@@ -183,7 +167,7 @@ div.gallery {
   }
   
   
-  .tab button {             /* gomb style */
+  .tab button {            
     background-color: inherit;
     float: left;
     border: none;
