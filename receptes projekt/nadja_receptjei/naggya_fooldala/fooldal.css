@@ -1,0 +1,92 @@
+
+
+body {
+    font-family: 'Georgia', serif; 
+    margin: 0;
+    padding: 0;
+    background-color: burlywood; 
+    color: #333;
+}
+
+
+h
+.hero {
+    background-image: url(./könyv_háttér.jpg); 
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+
+.featured-recipe {
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    background-color: #fff;
+    margin-bottom: 20px;
+}
+
+.featured-recipe img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+
+.btn {
+    background-color: #a52a2a; 
+    color: #fff;
+}
+
+body, h1, h2, p {
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); 
+}
+
+section {
+    max-width: 800px;
+    margin: 0 auto; 
+    padding: 20px;;
+}
+h1{
+    font-family: times, Times New Roman, times-roman, georgia, serif;
+	color: rgba(72, 26, 26,);
+	margin: 0;
+	padding: 0px 0px 6px 0px;
+	font-size: 51px;
+	line-height: 44px;
+	letter-spacing: -2px;
+	font-weight: bold;
+    text-align: center;
+    background-color: bisque;
+}
+#home{
+   border-color:black ;
+}
+footer{
+    font-family: times, Times New Roman, times-roman, georgia, serif;
+	color: rgba(72, 26, 26,);
+	font-size: 18px;
+	font-weight: bold;
+    text-align: center;
+    background-color: bisque;
+}
+a{
+    text-decoration: none;
+    color: #a52a2a;
+    font-weight: bold;
+}
+button{
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: bisque;
+    padding: 10px;
+    font-weight: bolder ;
+    border: 2px solid #a52a2a;
+}
