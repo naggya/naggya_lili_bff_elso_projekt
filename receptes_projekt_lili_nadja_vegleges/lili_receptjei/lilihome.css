@@ -1,0 +1,282 @@
+@font-face {
+  font-family: HandWrote;
+  src: url(fonts/IndieFlower-Regular.ttf);
+}
+
+@font-face {
+  font-family: Sharpie;
+  src: url(fonts/JasonSharpie.ttf);
+}
+
+
+body { 
+  background-image: url(background.jpeg);
+  background-size: cover; 
+  background-repeat: no-repeat;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+  
+
+p {
+  text-align: justify;
+  font-family: HandWrote;
+  font-weight: bold;
+  font-size: 40px;
+  text-align: center;
+  padding-top: 5%;
+}
+  
+h1 {
+  color: #87CEFA;
+  text-align: justify;
+  font-size: 30px;
+  display: block;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+  
+h2 {
+  color: #000000;
+  font-family: HandWrote;
+  text-decoration: underline #5C7A50;
+  text-align: justify;
+  font-size: 30px; 
+  display: block;
+  padding-top: 50px;
+  padding-bottom: 0px;
+  padding-left: 500px;
+}
+
+h3 {
+  text-align: center;
+}
+
+/*-------------------------------------------------------lili fooldal-----------------------------------------------------------------*/
+
+#udv {
+text-decoration: underline #5C7A50;
+}
+
+#konyvek {
+  width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 28%;
+}
+
+#nadjakonyv {
+  opacity: 1.0;
+}
+
+#nadjakonyv:hover {
+  opacity: 0.5;
+}
+
+.column {
+  float: left;
+  width: 25%;
+  padding: 5px;
+}
+  
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+#lili {
+  opacity: 20%;
+}
+
+/*-------------------------------------------------------eloetel, grissini-----------------------------------------------------------------*/
+
+#eloetel {
+  height: 825px;
+  display: block;
+  float: left;
+  padding-top: 30px;
+}
+
+#elohozza {
+  padding-top: 30px;
+}
+
+/*-------------------------------------------------------leves, husleves-----------------------------------------------------------------*/
+
+#leves {
+  height: 700px;
+  display: block;
+  float: left;
+  padding-top: 30px;
+}
+
+#leveshozza {
+  padding-top: 30px;
+}
+
+/*-------------------------------------------------------foetel, carbonara-----------------------------------------------------------------*/
+
+#carb {
+  height: 700px;
+  display: block;
+  float: left;
+  padding-top: 50px;
+}
+
+.hozzavalolista, ol {
+  list-style-type: none;
+  padding: 0;
+  padding-left: 500px;
+}
+
+#egy {
+  background-image: url(1-removebg-preview.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#ketto {
+  background-image: url(2-removebg-preview.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#harom {
+  background-image: url(3-removebg-preview.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#negy {
+  background-image: url(2-removebg-preview.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.hozzavalolista li {
+  background-color: rgb(135,206,250); 
+  color: black;
+  margin: 5px 0;
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.hozzavalolista .icon {
+  margin-right: 10px;
+}
+
+ol li {
+  background-color: #F3F3F3;
+  margin: 5px 0;
+  padding: 10px;
+  border-radius: 50px;
+  font-family: HandWrote;
+  font-size: 20px;
+}
+
+div.gallery {
+  margin: 5px;
+  float: left;
+  width: 347px;
+  font-family: Sharpie;
+  font-weight: bold;
+  font-size: 25px;
+}
+  
+div.gallery:hover {
+  border: 1px solid #777;
+}
+  
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+  
+div.desc {
+  text-align: right;
+}
+
+#helyek {
+  text-align: justify;
+  font-family: HandWrote;
+  text-decoration: underline #5C7A50;
+  font-weight: bold;
+  font-size: 30px;
+  text-align: center;
+  margin-top: -65px;
+}
+
+/*-------------------------------------------------------eloetel, grissini-----------------------------------------------------------------*/
+
+#desszert {
+  height: 753px;
+  display: block;
+  float: left;
+  padding-top: 30px;
+}
+
+#desszerthozza {
+  padding-top: 30px;
+}
+
+/*-----------------------------------------------------------js--------------------------------------------------------------------*/
+  
+.tab {
+  overflow: hidden;
+  background-color: rgb(255, 255, 255); 
+  position: fixed;
+  float: none;
+  margin: auto;
+  margin-left: 3%;
+  margin-top: 1%;
+  top: 0;
+  width: 90%;                                                
+  color: white;
+  box-shadow: 2px 2px 10px #95999a;
+  border-radius: 50px;
+}
+  
+  
+.tab button {            
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 15px 14px;
+  width: 20%;                                             
+  height: 65px;
+  font-size: 26px;
+  color: #5C7A50;
+  font-family: Helvetica;
+  font-weight: bolder;
+}
+  
+  
+.tab button:hover {          
+  background-color: #5C7A50;    
+  color: rgb(255, 255, 255);           
+  transition: 0.7s ease-in;               
+}
+  
+.tab button.active {
+  background-color: #5C7A50;
+  color: white;
+}
+  
+.tabcontent {      
+  font-family:'Helvetica';                 
+  display: none;
+  padding: 6px 12px;
+  border: none;
+  border-top: none;
+  animation: attunes 1.5s;
+}
+  
+@keyframes attunes {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}

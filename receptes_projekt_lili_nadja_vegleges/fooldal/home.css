@@ -1,0 +1,62 @@
+body { 
+  background-image: url(background.jpg);
+  background-size: cover; 
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+p{
+text-align: justify;
+font-family:'Helvetica';
+font-weight: bold;
+font-size: 40px;
+text-align: center;
+padding-top: 5%;
+}
+  
+h1{
+color: #87CEFA;
+text-align: justify;
+font-size: 30px;
+display: block;
+padding-top: 0px;
+padding-bottom: 0px;
+}
+  
+h2{
+color: #000000;
+text-align: justify;
+font-size: 20px; 
+display: block;
+padding-top: 50px;
+padding-bottom: 0px;
+padding-left: 500px;
+}
+
+   /*-------------------------------------------------------fooldal-----------------------------------------------------------------*/
+#konyvek {
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 28%;
+}
+
+img {
+  opacity: 1.0;
+}
+
+img:hover {
+  opacity: 0.5;
+}
+
+.column {
+    float: left;
+    width: 25%;
+    padding: 5px;
+}
+  
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
